@@ -1,0 +1,6 @@
+all:
+  PELT: [ '60min', '300min' ]
+  BB: [ '1D', '240min' ]
+  NATR: [ '60min', '1D' ]
+  MK: [ '60min', '1D' ]
+  Bayes: [ '120min' ]
