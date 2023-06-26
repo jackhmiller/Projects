@@ -9,10 +9,10 @@ from datetime import datetime
 import os
 import shutil
 
-img_folder = r'\Downloads\grid\test'  # obviously bad practice to put paths like this, but for time's sake...
-mask_folder = r'\Downloads\grid\ground_truth'
-img_dest = r'\muze\submission\src_images\images'
-mask_dest = r'C:\muze\submission\src_images\mask'
+img_folder = r'\grid\test'  
+mask_folder = r'\grid\ground_truth'
+img_dest = r'src_images\images'
+mask_dest = r'\src_images\mask'
 
 
 def create_train_label_folders() -> None:
