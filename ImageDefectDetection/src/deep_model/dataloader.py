@@ -9,7 +9,7 @@ IMG_DEST = r'\src_images\images'
 MASK_DEST = r'\src_images\mask'
 
 
-class MuzeDataset(Dataset):
+class AnomalyDataset(Dataset):
 	def __init__(self, images_directory, masks_directory, mask_filenames, transform):
 		self.images_directory = images_directory
 		self.masks_directory = masks_directory
