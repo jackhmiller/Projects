@@ -53,9 +53,9 @@ def get_datasets(img_dir: str, n_val: int = 10):
 		transforms.ToTensor(),
 	])
 
-	train_dataset = MuzeDataset(IMG_DEST, MASK_DEST, train_mask_filenames, transform=train_transform)
+	train_dataset = AnomalyDataset(IMG_DEST, MASK_DEST, train_mask_filenames, transform=train_transform)
 
-	val_dataset = MuzeDataset(IMG_DEST, MASK_DEST, val_mask_filenames, transform=val_transform)
+	val_dataset = AnomalyDataset(IMG_DEST, MASK_DEST, val_mask_filenames, transform=val_transform)
 
 	return train_dataset, val_dataset
 
