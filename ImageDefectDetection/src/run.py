@@ -17,9 +17,7 @@ def main(reference_img_path: str, inspect_img_path: str, method: str):
 	"""
 	case_name = get_case_name(inspect_img_path)
 
-	inspect_processed, ref_processed = run_image_processing(ref_path=reference_img_path,
-															inspect_path=inspect_img_path,
-															case=case_name)
+	inspect_processed, ref_processed = run_image_processing(ref_path=reference_img_path, inspect_path=inspect_img_path, case=case_name)
 
 	ssim_score = ssim(img1=inspect_processed, img2=ref_processed)
 
