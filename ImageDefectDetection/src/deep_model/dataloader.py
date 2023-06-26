@@ -5,8 +5,8 @@ import torchvision.transforms as transforms
 import cv2
 import random
 
-IMG_DEST = r'C:\Users\JackMiller\PycharmProjects\muze\submission\src_images\images'  # this is bad practice, just putting it here for sake of time
-MASK_DEST = r'C:\Users\JackMiller\PycharmProjects\muze\submission\src_images\mask'
+IMG_DEST = r'\src_images\images' 
+MASK_DEST = r'\src_images\mask'
 
 
 class MuzeDataset(Dataset):
